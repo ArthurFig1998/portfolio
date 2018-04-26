@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>First Event</title>
+  <script>
+    function showMessage(theButtonClicked)
+    {
+        document.getElementById("showHere").innerHTML = "Congratulations, you did it! <p> The page has been updated.</p>";
+        theButtonClicked.innerHTML = "Click Me Again!";
+    }
+  </script>
+    
+  <style>
+
+  </style>
+</head>
+
+<body>
+    <button onclick="showMessage(this)">Click Me!</button>
+    <div id="showHere"></div>
+</body>
+</html>
