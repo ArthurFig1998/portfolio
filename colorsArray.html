@@ -1,20 +1,36 @@
 <html>
     <head>
         <script>
-            function colors()
-            {
+
                 const colors = new Array("blue", "red", "yellow", "green");
             
                 for (var i = 0; i < colors.length; i++)
                 {
                     console.log(colors[i]);
-                    document.getElementById('colorsPrint').innerHTML = colors[i];   
                 }
-            }
+
+//                const numbers = new Array(15, 23, 4, 5, 8, 17, 20, 3);
+//            
+//                for (var i = 0; i < numbers.length; i++)
+//                {
+//                    console.log(numbers[i]);
+//                }
+                
+                const numbers = new Array(15, 23, 4, 5, 8, 17, 20, 3);
+                const newArray = numbers.map(function(number){
+                    return number * -1;
+                });
+                console.log(newArray);
+            
+            const negNumbers = numbers.map(number => number * -1);
+            
+                console.log(negNumbers);
         </script>
     </head>
     <body>
-        <button onclick="colors()">Click me!</button>
-        <section id="colorsPrint"></section>
+     <!--   <button onclick="colors()">Click Me For Colors!</button>
+        <br>
+        <button onclick="numbers()">Click Me For Numbers!</button>
+        <section id="colorsPrint"></section> -->
     </body>
 </html>
