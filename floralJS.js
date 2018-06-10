@@ -50,6 +50,39 @@ function calcEstimate()
     
     
     
+    //// HOUSE SQ FOOTAGE
+//    var 400700 = document.getElementById('4-7');
+//    var 701-1000 = document.getElementById('7-10');
+//    var 1001-1300 = document.getElementById('10-13');
+//    var 1301-1700 = document.getElementById('13-17');
+//    var 1701-2100 = document.getElementById('17-21');
+//    var 2101-2500 = document.getElementById('21-25');
+//    var 2501-2900 = document.getElementById('25-29');
+//    var 2901-3300 = document.getElementById('29-33');
+//    var 33+ = document.getElementById('33+');
+    ////
+    
+    
+    /******************************************************
+    Adding estimated time of service based on last cleaning
+    *******************************************************/
+    if(lessThanMonth.checked)
+        {
+            estimatedTime += 0;
+        }
+    else if(betweenMonthTwo.checked)
+        {
+            estimatedTime += 2;
+        }
+    else if(threeMore.checked)
+        {
+            estimatedTime += 4;
+        }
+    
+    /*****************
+    *****************/
+    
+    
     /****************
     Defining pricing
     ****************/

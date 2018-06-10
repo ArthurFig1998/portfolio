@@ -84,7 +84,6 @@ html
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     align-content:center;
-    background-color: midnightblue;
     margin: 0;
     padding: 0;
 }
@@ -107,7 +106,7 @@ footer
 {
     display: block;
     color: white;
-    background-color: midnightblue;
+    background-color: #ff1c91;
 }
 
 h1
@@ -141,7 +140,7 @@ h1
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: midnightblue;
+    background-color: #38ea38;
 }
 
 .topnav a
@@ -157,7 +156,7 @@ h1
 
 .topnav a:hover 
 {
-    background-color: whitesmoke;
+    background-color: #ff6bb7;
     color: black;
 }
 
