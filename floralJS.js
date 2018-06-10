@@ -32,6 +32,7 @@ function calcEstimate()
     var dollarsPerHour = 24;
     var estimatedTime = 0;
     
+    
     ///TYPE OF CLEANING
     var standard = document.getElementById('standard');
     var deep = document.getElementById('deep');
