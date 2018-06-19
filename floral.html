@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="floralCSS.css">
-        <script src="floralJS.js"></script>
+        
         <title>Floral Breeze | Contact Us</title>
     </head>
     <body>
@@ -29,7 +29,7 @@
                 <div id="primary">
                         <img src="http://avenseo.com/wp-content/uploads/2017/07/contact-banner-1024x356.jpg" id="top">
                         <fieldset>
-                            <form action="" onsubmit="calcEstimate()">
+                            <form id="formTesting">
                                 
                                 <strong>What type of cleaning are you looking for?</strong>
                                 <br>
@@ -176,15 +176,20 @@
                                     Cat
                                     <br>
                                     <br>
-                                </div>
-                                <input type="submit" value="Submit">
+                                </div>                                
+                                <input type="submit" id="submit" value="Submit">
                                 <input type="reset" value="Reset">
+                                
                             </form>
+                            <div id="finalMessage" style="display: none">
+                                <h3>Thank You for choosing us!</h3>
+                                <p> Your estimated final value is: U$<span id="finalPrice"></span>.00.</p>
+                            </div>
                         </fieldset>
                     </div>
                 </div>
 
-        
+        <script src="floralJS.js"></script>
             <a href="#top">Back to the top</a>
         <footer>
             <br>
