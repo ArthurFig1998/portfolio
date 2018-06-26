@@ -69,15 +69,15 @@ function calcEstimate(event)
             dollarsPerHour = 24;
     
     
-    ///LAST CLEANING
+    /************
+    Last Cleaning
+    ************/
     var lessThanMonth = document.getElementById('lessMonth');
     var betweenMonthTwo = document.getElementById('betweenMonthTwo');
     var threeMore = document.getElementById('threeMore');
-    ///
+
     
-     /******************************************************
-    Adding estimated time of service based on last cleaning
-    *******************************************************/
+     
     if(lessThanMonth.checked)
             estimatedTime += 0;
     else if(betweenMonthTwo.checked)
@@ -86,7 +86,9 @@ function calcEstimate(event)
             estimatedTime += 4;
     
     
-    //// HOUSE SQ FOOTAGE
+    /*********
+    House size
+    **********/
     var smallish = document.getElementById('4-7');
     var small = document.getElementById('7-10');
     var mediumish = document.getElementById('10-13');
@@ -96,11 +98,9 @@ function calcEstimate(event)
     var bigish = document.getElementById('25-29');
     var big = document.getElementById('29-33');
     var bigger = document.getElementById('33+');
-    ///
+   
     
-    /**********************************
-    Adding time according to house size
-    **********************************/
+   
     if(smallish.checked)
         estimatedTime += 1;
     else if(small.checked)
@@ -119,6 +119,35 @@ function calcEstimate(event)
         estimatedTime += 8;
     else if(bigger.checked)
         estimatedTime += 9;
+    
+    
+    /***************
+    Bathroom Amount
+    ***************/
+    var oneTwo = document.getElementById('1-2');
+    var threeFour = document.getElementById('3-4');
+    var fiveSix = document.getElementById('5-6');
+    var six = document.getElementById('6');
+    
+    if(oneTwo.checked)
+        estimatedTime += 1;
+    else if(threeFour.checked)
+        estimatedTime += 2;
+    else if(fiveSix.checked)
+        estimatedTime +=3;
+    else if(six.checked)
+        estimatedTime += 4;
+    
+    
+    /*************
+    Inside fridge?
+    *************/
+    
+    var insideFridge = document.getElementById('fridgeY');
+    
+    if(insideFridge.checked)
+        estimatedTime += 1;
+    
     
     
     var finalPrice = estimatedTime * dollarsPerHour;
