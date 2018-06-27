@@ -40,14 +40,77 @@
             /********
             Example 5
             *********/
-            let a = 1;
-            let b = 2;
-            (()=>
+//            let a = 1;
+//            let b = 2;
+//            (()=>
+//            {
+//                const temp = a;
+//                a = b;
+//                b = temp;
+//            })();
+            
+            
+            let [a,b] = [1,2];
+            [a,b] = [b,a];
+            
+            /********
+            Example 6
+            *********/
+//            (function()
+//            {
+//                const name = 'Peter Parker';
+//                const days = 
+//                      ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//                const date = new Date(), today = days[date.getDay()];
+//                console.log(`Welcome back ${name}. Today is ${today}`);
+//                
+//            }) ();
+            
             {
-                const temp = a;
-                a = b;
-                b = temp;
-            })();
+                const name = 'Peter Parker';
+                const days = 
+                      ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                const date = new Date(), today = days[date.getDay()];
+                console.log(`Welcome back ${name}. Today is ${today}`);
+            }
+            
+            /********
+            Example 7
+            *********/
+            (function()
+            {
+                //Block A
+                const name = 'Block A';
+                console.log(`Hello from ${name}`);
+            }) ();
+            
+            (function()
+            {
+                //Block B
+                const name = 'Block B';
+                console.log(`Hello from ${name}`);
+            }) ();
+            
+            
+            /********
+            Example 8
+            *********/
+            
+            function party()
+            {
+                console.log('Wow this is amazing!');
+                party = function()
+                {
+                    console.log('Been there, got the T-Shirt');
+                }
+            }
+            
+            party.music = 'Classical Jazz';
+            
+//            const beachParty = party;
+//            
+//            beachParty();
+            
             
             
         </script>
