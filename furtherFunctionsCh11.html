@@ -1,0 +1,62 @@
+<html>
+    <head>
+        
+        <script>
+            
+            /**************
+            Example 1 and 3
+            **************/
+            function square(x)
+            {
+                square.cache = square.cache || {};
+                if(!square.cache[x])
+                    {
+                        square.cache[x] = x * x;
+                    }
+                return x * x;
+            }
+            
+            /********
+            Example 2
+            *********/
+            const clark = { name: 'Clark' };
+            const bruce = { name: 'Bruce' };
+            
+            function sayHello(greeting='Hello')
+            {
+                return `${ greeting }, my name is ${ this.name }`;
+            }
+            
+            /********
+            Example 4
+            *********/
+            (function()
+            {
+                const temp = 'World';
+                console.log( `Hello ${temp}`);
+            }) ();
+            
+            
+            /********
+            Example 5
+            *********/
+            let a = 1;
+            let b = 2;
+            (()=>
+            {
+                const temp = a;
+                a = b;
+                b = temp;
+            })();
+            
+            
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <p>Testing</p>
+        
+    </body>
+</html>
