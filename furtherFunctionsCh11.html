@@ -112,6 +112,137 @@
 //            beachParty();
             
             
+            /********
+            Example 9
+            *********/
+            function ride()
+            {
+                if (window.unicorn)
+                {
+                    ride = function()
+                    {
+
+                        return 'Riding on a unicorn is the best!';
+                    }
+                }
+                
+                else
+                {
+                    ride = function()
+                    {
+
+                        return 'Riding on a pony is still pretty good';
+                    }
+                }
+                return ride();
+            }
+            
+            
+            /*********
+            Example 10
+            **********/
+            function factorial(n)
+            {
+                if (n === 0)
+                {
+                    return 1;
+                }
+                
+                else
+                {
+                    return n * factorial(n - 1);
+                }
+            }
+            
+            function collatz(n, sequence=[n])
+            {
+                if (n === 1)
+                {
+                    return `Sequence took ${sequence.length} steps. It was
+                        ${sequence}`;
+                }
+                if (n%2 === 0) 
+                {
+                    n = n/2;
+                } 
+                
+                else 
+                {
+                    n = 3*n + 1;
+                }
+                return collatz(n,[...sequence,n]);
+            }
+            
+            /*********
+            Example 11
+            **********/
+            function wait(message, callback, seconds)
+            {
+                setTimeout(callback,seconds * 1000);
+                console.log(message);
+            }
+            
+            function selfDestruct()
+            {
+                console.log('BOOOOM!');
+            }
+            
+            wait('This tape will self-destruct in five seconds ... ', selfDestruct, 5);
+            console.log('Hmmm, should I accept this mission or not ...?');
+            
+            
+            /*********
+            Example 12
+            **********/
+//            const promise = new Promise( (resolve, reject) => {
+//                if (success) 
+//                {
+//                    resolve(value);
+//                } 
+//                else 
+//                {
+//                    reject(error);
+//                }
+//            });
+            
+//            const dice = {
+//                sides: 6,
+//                roll()
+//                {
+//                    return Math.floor(this.sides * Math.random()) + 1;
+//                }
+//            }
+            
+//            const promise = new Promise( (resolve,reject) => {
+//                const n = dice.roll();
+//                setTimeout(() => {
+//                    (n > 1) ? resolve(n) : reject(n);
+//                }, n*1000);
+//            });
+            
+            
+//            const dice = {
+//                sides: 6,
+//                roll() {
+//                    return Math.floor(this.sides * Math.random()) + 1;
+//                }
+//            }
+//            console.log('Before the roll');
+//            const roll = new Promise( (resolve,reject) => {
+//                const n = dice.roll();
+//                if(n > 1)
+//                {
+//                    setTimeout(()=>{resolve(n)},n*200);
+//                } 
+//                else 
+//                {
+//                    setTimeout(()=>reject(n),n*200);
+//                }
+//            });
+//            roll.then(result => console.log(`I rolled a ${result}`) )
+//                .catch(result => console.log(`Drat! ... I rolled a ${result}`) );
+//            console.log('After the roll');
+            
             
         </script>
         
@@ -119,7 +250,7 @@
     
     <body>
         
-        <p>Testing</p>
+        <p>Testing - Open console log F12 (fn F12)</p>
         
     </body>
 </html>
