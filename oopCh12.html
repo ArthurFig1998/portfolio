@@ -1,0 +1,118 @@
+<html>
+    <head>
+                
+        <script>
+//            const Dice = function(sides=6)
+//            {
+//                this.sides = sides;
+//                this.roll = function()
+//                {
+//                    return Math.floor(this.sides * Math.random() + 1)
+//                }
+//            }
+//            
+            
+            
+            /***********
+            Example 2
+            ***********/
+            const literalObject = {};
+            constructedObject = new Object();
+            ///const literalArray[1, 2, 3];
+            constructedArray = new Array(1, 2, 3);
+            
+            
+            /**********
+            Example 3
+            **********/
+            class Dice
+            {
+                constructor(sides=6)
+                {
+                    this.sides = sides;
+                }
+                roll()
+                {
+                    return Math.floor(this.sides * Math.random() + 1)
+                }
+                
+                static description()
+                {
+                    return 'A way of choosing random numbers'
+                }
+            }
+            
+            const redDice = new Dice;
+            const whiteDice = new Dice(4);
+            const blueDice = new Dice(20);
+            const greenDice = new redDice.constructor(10);
+            
+            
+            /******
+            Example 4
+            ******/
+            class Turtle
+            {
+                constructor(name, color)
+                {
+                    this.name = name;
+                    this.weapon = 'hands';
+                    let _color = color;
+                    this.setColor = color => { return _color = color; }
+                    this.getColor = () => _color;
+                }
+                sayHi()
+                {
+                    return `Hi dude, my name is ${this.name}`;
+                }
+                attack()
+                {
+                    return `Feel the power of my ${this.weapon}!`;
+                }
+            }
+            
+            const leo = new Turtle('Leonardo');
+            const raph = new Turtle('Raphael');
+            const don = new Turtle('Donatello');
+            const mike = new Turtle('Michelangelo');
+            
+            
+            /*******
+            Example 5
+            ********/
+            const Human = {
+                arms: 2,
+                legs: 2,
+                walk() { console.log('Walking'); }
+            }
+//            const lois = Object.create(Human);
+//            lois.job = 'Reporter';
+//            const jimmy = Object.create(Human, { 
+//                name: {
+//                    value: 'Jimmy Olsen', enumerable: true }
+//                , job: {
+//                    value: 'Photographer',
+//                    enumerable: true } });
+            
+            
+            
+//            const Superhuman = new Object.create(Human);
+//            Superhuman.change = function() {
+//                return `${this.realName} goes into phone box and comes out as ${this.name}!`;
+//            }
+//            Superhuman.name = 'Name needed';
+//            Superhuman.realName = 'Real Name needed';
+//            
+//            
+//            const superman = Object.create(Superhuman);
+//            superman.name = 'Superman';
+//            cuperman.realName = 'Clark Kent';
+        </script>
+        
+    </head>
+    <body>
+        
+        <p>Testing</p>
+        
+    </body>
+</html>
