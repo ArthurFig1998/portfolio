@@ -57,7 +57,7 @@ function calcEstimate(event)
         }
    
     
-    if(onceWeek.checked)
+    else if(onceWeek.checked)
             dollarsPerHour = 20;
     else if(onceTwoWeeks.checked)
             dollarsPerHour = 21;
@@ -147,6 +147,16 @@ function calcEstimate(event)
     
     if(insideFridge.checked)
         estimatedTime += 1;
+    
+    /********
+    Pets?
+    ********/
+    
+    var havePets = document.getElementById('petY');
+    
+    if(petY.checked)
+        estimatedTime += 2;
+    
     
     
     
