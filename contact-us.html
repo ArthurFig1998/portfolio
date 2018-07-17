@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>
+    <title>Dry Oar | Contact Us</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js"></script>
+    
+  </head>  
+  <body>
+      <div id="content">
+      <header>
+          <img class="logo-image" alt="Logo Picture" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2Fdryoarlogo%20copy%202.png?1526759445079">
+          <br>
+          
+          <nav>
+              <ul>
+                  <li>&nbsp;<a href="index.html">| Home</a></li>
+                  <li><a href="rivers.html">| Rivers</a></li>
+                  <li><a href="contact-us.html">| Contact Us &nbsp; |</a></li>
+              </ul>
+          </nav>
+          
+          <br>
+          <img class="banner-image" alt="Banner" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2FredContactBanner.jpg?1531435849381">
+          <br>
+      
+      </header>
+        <div id="normalFont">
+          <br>
+        <section id="sec3" class="clearfix">
+          <h1 style="font-family: 'Josefin Sans', sans-serif;">
+            Need more information?
+          </h1>
+          <p id="contactPgh">
+            Questions about pricing, location, equipment rental, scheduling or anything else?! Let us know!
+          </p>
+        </section>
+        
+          <!-- Section Two -->
+      <section id="sec1" class="clearfix">
+        
+        
+          <!-- Left column -->
+          <div class="leftcol" style="border-right: 1px solid gray;">
+              <form id="myForm">
+                    
+                First Name: 
+                <input type="text" placeholder="Arthur" required>
+                <br>
+                <br>
+                Last Name: 
+                <input type="text" placeholder="Figueiredo" required>
+                <br>
+                <br>
+                  
+                  
+                  
+                Do you prefer to be contacted by e-mail or phone?
+                <br>
+                  
+                <input type="radio" name="contactType" id="email" onclick="checkType()"> <img style="width: 20px; height: 20px;" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2Femail-icon.png?1531433209873"> E-Mail
+                <br>
+                  
+                <input type="radio" name="contactType" id="phone" onclick="checkType()"> <img style="width: 20px; height: 20px;" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2Fphone-icon.png?1531433375571"> Phone
+                <br>
+                  <div id="emailType">
+                    <br>
+                      E-Mail: &nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" placeholder="fig16009@byui.edu" >
+                  </div>
+                  
+                  
+                  <div id="phoneType">
+                    <br>
+                      Phone number:
+                      <input type="text" placeholder="(111)222-3333">
+                  </div>
+                     <br>
+                     Your Message:
+                     <br>
+                     <br>
+                     <textarea rows="10" cols="40" id="message" placeholder="Your message here . . ." required></textarea>
+              
+                     <br>
+                     <br>
+                     <input type="submit" id="submit">
+              </form>
+              <div id="submitted" style="opacity: 0">
+                  <h2>Thank you for contacting us</h2>
+                  <p>We will get back to you shortly.</p>
+              </div>
+          </div>
+          
+          <script>
+              
+          function showMessage(event)
+          {
+              event.preventDefault();
+              
+              var myForm = event.target;
+              myForm.style.opacity = "0";
+              myForm.style.height = "0";
+              myForm.style.transition= ".5s";
+              
+              
+              document.getElementById('submitted').style.opacity = "1";
+              document.getElementById('submitted').style.transition = "2s";
+          }
+          
+          
+          document.getElementById('myForm').addEventListener("submit", showMessage);
+      </script>
+          
+          <!-- Right column -->
+          <div class="rightcol">
+              <img class="contactImage" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2FcontactLast.png?1531436124712">
+              
+      
+          </div>
+      </section>
+      
+      
+      
+      <br>
+      
+        </div>
+      <footer class="clearfix">
+        <hr>
+          <div class="NameClassCopy">  
+              &copy; Dry Oar 2018 || Arthur Figueiredo WDD 100‐02  
+          </div>
+          
+          <div class="socialIcons">
+              <a href="#" target="_blank"><img class="socialIcon" alt="Facebook Page" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2FFacebookYellow.png?1531436293112"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" target="_blank"><img class="socialIcon" alt="Youtube Channel" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2FyoutubeYellow.png?1531436475201"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" target="_blank"><img class="socialIcon" alt="WhatsApp" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2FwppYellow.png?1531436410371"></a>
+          </div>
+      </footer>
+      </div>
+  </body>
+</html>

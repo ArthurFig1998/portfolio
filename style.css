@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+          
+.clearfix::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+          
+/*Navigation Styles*/
+nav
+{
+    background-color: #AC3931;
+    text-align: right;
+    margin-top: -100px;
+}
+          
+nav a
+{
+    color: #f6f7eb;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+nav li
+{
+    font-size: 1.5em;
+    list-style-type: none;
+    font-family: 'Bitter', serif;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover
+{
+  color: black;
+}
+          
+/*Navigation Styles end*/
+      
+/*Header Styles*/
+h1, h2, h3, h4, h5, h6
+{
+    color: #E18335;
+    line-height: .2em;
+    padding-top: 1em;
+}
+/*Header styles end*/
+          
+.pgh
+{
+    color: black;
+}
+          
+/*Images Styles*/
+          
+.logo-image
+{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    background-color: white;
+    border: solid 2px #beb7a4;
+    height: 111px;
+    width: 115px;
+}
+          
+.banner-image
+{
+    width: 960px;
+    height: 250px;
+    border-radius: 15px 50px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+          
+.img3
+{
+    width: 450px;
+    height: 350px;
+    border-radius: 15px 50px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+          
+.img4
+{
+    width: 450px;
+    height: 350px;
+    border-radius: 15px 50px;
+}
+          
+.socialIcon
+{
+    width: 40px;
+    height: 40px;
+}
+          
+.contactImage
+{
+    height: 350px;
+    width: 450px; 
+}
+/*Images Styles end*/
+    
+#content
+{
+    width: 960px;
+    margin: 0 auto;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+          
+#sec1
+{
+    padding: 10px;
+}
+      
+#sec2
+{
+    background-color: #FBFFB9;
+    padding: 10px;
+}
+          
+#sec3
+{
+    text-align: center;
+    padding: 50px;
+}
+        
+          
+         
+          
+#calmFont
+{
+    font-family: 'Indie Flower', cursive;
+}
+          
+#intenseFont
+{
+              
+    font-family: 'Permanent Marker', cursive;
+}
+          
+          
+.leftcol
+{
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+          
+.rightcol
+{
+    width: 45%;
+    float: right;
+    padding: 10px;
+}
+          
+.nameClassCopy
+{
+    float: left;
+}
+          
+.socialIcons
+{
+    float: right;
+}
+          
+footer
+{
+    background-color: #AC3931;
+          
+}
+      
+body
+{
+    background-color: #FFBC42;
+}
+
+#emailType
+{
+  display: none;
+}
+
+#phoneType
+{
+  display: none;
+}
+
+#contactPgh
+{
+  font-size: 20px;
+}
+
+p
+{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#normalFont
+{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#submit
+{
+  background-color: #AC3931;
+  border-radius: 15px 10px;
+  padding: 10px;
+  color: white;
+  box-shadow: 5px 5px 1px #ccc;
+}
+
+#submit:hover
+{
+  background-color: #FFBC42;
+}
