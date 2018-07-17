@@ -200,7 +200,7 @@ h1
 {
     .topnav.responsive
     {
-        position: relative;
+        position: fixed;
     }
     .topnav.responsive .icon
     {
@@ -228,7 +228,8 @@ h1
     display: table-cell;
 }
 
-.btn-group .button {
+.btn-group .button
+{
     background-color: midnightblue;
     color: 4px 8px;
     text-align: center;
@@ -242,7 +243,8 @@ h1
 
 
 
-.button:hover {
+.button:hover
+{
     background-color: #0099cc;
 }
 
@@ -275,4 +277,18 @@ td, th
 {
     height: 30px;
     width: 30px;
+}
+
+#petYes
+{
+    opacity: 0;
+    transition: .5s;
+    height: 0;
+}
+
+#freqCleaning
+{
+    opacity: 0;
+    transition: .5s;
+    height: 0;
 }

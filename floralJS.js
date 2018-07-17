@@ -14,17 +14,29 @@ function myFunction()
 function checkType()
 {
     if(document.getElementById('standard').checked)
-        freqCleaning.style.display = "block";
-    else
-        freqCleaning.style.display = "none";
+        {
+            freqCleaning.style.opacity = "1";
+            freqCleaning.style.height = "11em";
+        }
+    else if(document.getElementById('deep').checked)
+        {
+            freqCleaning.style.height = "0";
+            freqCleaning.style.opacity = "0";
+        }
 }
             
 function checkPet()
 {
     if(document.getElementById('petY').checked)
-        petYes.style.display = "block";
-    else
-        petYes.style.display = "none";    
+        {
+            petYes.style.opacity = "1";
+            petYes.style.height = "7em";
+        }
+    else if(document.getElementById('petN').checked)
+        { 
+            petYes.style.height = "0";
+            petYes.style.opacity = "0";
+        }
 }
 
 function calcEstimate(event)
@@ -127,7 +139,7 @@ function calcEstimate(event)
     var oneTwo = document.getElementById('1-2');
     var threeFour = document.getElementById('3-4');
     var fiveSix = document.getElementById('5-6');
-    var six = document.getElementById('6');
+    var six = document.getElementById('6+');
     
     if(oneTwo.checked)
         estimatedTime += 1;
