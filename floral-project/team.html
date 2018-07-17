@@ -95,7 +95,20 @@
                     </div>
                 </div>
 
-        <script src="script.js"></script>
+        <script>
+            function myFunction()
+            {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav")
+                {
+                    x.className += " responsive";
+                }
+                else
+                {
+                    x.className = "topnav";
+                }
+            }
+        </script>
             <a href="#top" class="backTop"><img class="topIcon" src="https://cdn2.iconfinder.com/data/icons/music-player-icons-filled/54/Download_Upward-512.png"></a>
         <footer>
             <br>
