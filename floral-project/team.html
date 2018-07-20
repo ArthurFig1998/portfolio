@@ -24,7 +24,7 @@
             <br>
             
         
-        
+        <div id="main">
         
         
             <br>
@@ -32,68 +32,84 @@
             <br>
             <div class="wrap">
                 <div id="primary">
+                    <h3>We don't just have cleaners and just clean your house or business, our team is almost our family, and our service is our top priority!</h3>
                         <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="https://www.gracehomecleaning.com/wp-content/uploads/2017/06/Not-All-Residential-Cleaning-Professionals-are-Created-Equal-Grace-Home-Cleaning.jpg" style="width:100%">
-                <div class="text">. . .</div>
-            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="https://www.gracehomecleaning.com/wp-content/uploads/2017/06/Not-All-Residential-Cleaning-Professionals-are-Created-Equal-Grace-Home-Cleaning.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="https://www.news-medical.net/image.axd?picture=2018%2F2%2Fcleaning-1.jpg" style="width:100%">
-                <div class="text">. . .</div>
-            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="https://www.news-medical.net/image.axd?picture=2018%2F2%2Fcleaning-1.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="http://wondrlust.com/wp-content/uploads/2018/05/cleaning.jpg" style="width:100%">
-                <div class="text">. . .</div>
-            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="http://wondrlust.com/wp-content/uploads/2018/05/cleaning.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
                     </div>
-                </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+                </div> <!--- primary --->
+                
+                <div id="secondary">
+                    <div class="widget">
+                        <ul style="padding: 5px 8px; font-size: 19px; font-family: sans-serif">
+                            <a class="button" href="#about">Meet Our Team</a>
+                            <br>
+                            <a class="button" href="#admissions">Get To Know our Work</a>
+                            <br>
+                            <a class="button" href="#campuslife">Our Licenses</a>
+                            <br>
+                        </ul>
+                    </div><!--.widget-->
+                </div><!--#secondary-->
+            </div><!--- main --->
+        
+       
 
         <script>
             function myFunction()
@@ -109,6 +125,7 @@
                 }
             }
         </script>
+        </div>
             <a href="#top" class="backTop"><img class="topIcon" src="https://cdn2.iconfinder.com/data/icons/music-player-icons-filled/54/Download_Upward-512.png"></a>
         <footer>
             <br>

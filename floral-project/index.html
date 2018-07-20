@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Floral Breeze | Home</title>
+    </head>
+    <body>
+        <header class="topnav" id="myTopnav">
+            <a href="#home" onclick="home()">Home</a>
+            <a href="#team" onclick="team()">Our Team</a>
+            <a href="#message" onclick="message()">Talk to Us</a>
+            <a href="#contactPart" onclick="contact()">Get Estimate</a>
+            <br>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <br>
+            <hr>
+            <h1 class="vr1 mobileName full-text header"> &nbsp; Floral Breeze Home Services </h1>
+            <h1 class="mobileName short-text header"> &nbsp; Floral Breeze</h1>
+        </header>
+        <hr>
+        <div id="space">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <div id="home">
+            <div class="wrap">
+                <div id="primary">
+                    <div class="container">
+                        <br>
+                        <br>
+                        <img src="Presto-Salon.jpg" alt="Notebook" style="width:100%;">
+                        <div class="content">
+                            <h1 style="font-family: 'Josefin Sans', sans-serif;" >Introducing Floral Breeze</h1>
+                            
+                        </div>
+                    </div> <!-- container -->
+                    <div id="sec2">
+                        <h1>A bit about us</h1>
+                        <h3>Our Story</h3>
+                        <p>Since our founding, Floral Breeze has been known for quality services, exceptional efficiency and the highest level of professionalism. No matter what service you’re looking for, we guarantee to not only meet, but exceed your    expectations and ensure your full satisfaction. 
+
+                        Our team is up for every job, managing projects with the skill and experience our clients have come to expect. Please get in touch to learn more about our team, our company or for details about the services we provide.</p>
+                    </div>
+                    <div id="sec1">
+                        <h1>Professional Services</h1>
+                        <h3>What We Provide</h3>
+                        <p>You can count on Floral Breeze to not only meet, but exceed all your needs and requests. Learn more about the services we provide below, and let us know if you’d like to learn more about a specific offering.</p>
+                    </div>
+                    <div id="sec2">
+                        <h1>House Cleaning</h1>
+                        <p>We have the experience and skills necessary to tackle just about every type of job that comes our way. With Floral Breeze, clients know exactly what to expect - professionalism, efficiency and exceptional results.</p>
+                    </div>
+                    <div id="sec3">
+                        <h1>Commercial Cleaning</h1>
+                        <p>Floral Breeze is committed to getting the job done, especially when it comes to this service. You can count on us to be professional, timely, efficient and make sure you’re satisfied every step of the way.</p>
+                    </div>
+                </div> <!-- primary -->
+            </div> <!--- wrap --->
+        </div>
+        <div id="message">
+            <div class="wrap">
+                <div id="primary">
+                    <div style="border-right: 1px solid gray; border-left: 1px solid gray; padding-left: 20px;">
+                        <form id="myForm">
+                            
+                            <h1>Any questions? Leave us a message!</h1>
+                            <br>
+                            First Name: 
+                            <input type="text" placeholder="Arthur" required>
+                            <br>
+                            <br>
+                            Last Name: 
+                            <input type="text" placeholder="Figueiredo" required>
+                            <br>
+                            <br>
+                  
+                  
+                  
+                            Do you prefer to be contacted by e-mail or phone?
+                            <br>
+                  
+                            <input type="radio" name="contactType" id="email" onclick="checkTypeContact()"> <img style="width: 20px; height: 20px;" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2Femail-icon.png?1531433209873"> E-Mail
+                            <br>
+                  
+                            <input type="radio" name="contactType" id="phone" onclick="checkTypeContact()"> <img style="width: 20px; height: 20px;" src="https://cdn.glitch.com/3ee5b53d-8bb9-4b30-876e-0162812b3a1e%2Fphone-icon.png?1531433375571"> Phone
+                            <br>
+                            <div id="emailType" style="display: none">
+                                <br>
+                                E-Mail: &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" placeholder="fig16009@byui.edu" >
+                            </div>
+                  
+                  
+                            <div id="phoneType" style="display: none">
+                                <br>
+                                Phone number:
+                                <input type="text" placeholder="(111)222-3333">
+                            </div>
+                            <br>
+                            Your Message:
+                            <br>
+                            <br>
+                            <textarea rows="10" cols="40" id="message" placeholder="Your message here . . ." required></textarea>
+              
+                            <br>
+                            <br>
+                            <input type="submit" id="submit">
+                        </form>
+                        <div id="submitted" style="opacity: 0">
+                            <h2>Thank you for contacting us</h2>
+                            <p>We will get back to you shortly.</p>
+                        </div>
+                    </div>
+          
+                    <script>
+              
+                        function showMessage(event)
+                        {
+                            event.preventDefault();
+              
+                            var myForm = event.target;
+                            myForm.style.opacity = "0";
+                            myForm.style.height = "0";
+                            myForm.style.transition= ".5s";
+              
+              
+                            document.getElementById('submitted').style.opacity = "1";
+                            document.getElementById('submitted').style.transition = "2s";
+                        }
+          
+          
+                        document.getElementById('myForm').addEventListener("submit", showMessage);
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        <div id="team" style="display: none;">
+            <div id="main">
+        
+                
+                <div class="wrap">
+                    <div id="primary">
+                        <br>
+                        <h2 id="normalFont">We make it personal!</h2>
+                        <p>Our team is like a family to us, and our service to you is our top priority.</p>
+                        <div class="slideshow-container">
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="cleaningcrew.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="https://www.news-medical.net/image.axd?picture=2018%2F2%2Fcleaning-1.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="http://wondrlust.com/wp-content/uploads/2018/05/cleaning.jpg" style="width:100%">
+                                <div class="text">. . .</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                        }
+                    </script>
+                </div> <!--- primary --->
+                
+                <div id="secondary">
+                    <div class="widget">
+                        <ul style="padding: 5px 8px; font-size: 19px; font-family: sans-serif">
+                            <a class="button" href="#">Meet Our Team</a>
+                            <br>
+                            <a class="button" href="#">Get To Know our Work</a>
+                            <br>
+                            <a class="button" href="#   ">Our Licenses</a>
+                            <br>
+                        </ul>
+                    </div><!--.widget-->
+                </div><!--#secondary-->
+            </div><!--- main --->
+        </div>
+        </div>
+        
+        <div id="contactPart" style="display: none">
+            <br>
+            <br>
+            <div class="wrap">
+                <div id="primary">
+                        <img src="ContactBanner.jpg">
+                    <br>
+                    <br>
+                        <fieldset>
+                            <form id="formTesting">
+                                
+                                <strong>What type of cleaning are you looking for?</strong>
+                                <br>
+                                <br>
+                                <input type="radio" name="cleaningType" value="standard" id="standard" onclick="checkType()">
+                                Standard Cleaning
+                                <br>
+                                <input type="radio" name="cleaningType" value="deep" id="deep" onclick="checkType()" checked>
+                                Deep Cleaning
+                                <br>
+                                <br>
+                                
+                                <div id="freqCleaning">
+                                    <strong>How often do you want the service?</strong>
+                                    <br>
+                                    <br>
+                                    <input type="radio" name="frequency" value="onceWeek" id="onceWeek" checked>
+                                    Once a week
+                                    <br>
+                                    <input type="radio" name="frequency" value="onceTwoWeeks" id="onceTwoWeeks">
+                                    Once every two weeks
+                                    <br>
+                                    <input type="radio" name="frequency" value="onceMonth" id="onceMonth">
+                                    Once a month
+                                    <br>
+                                    <input type="radio" name="frequency" value="onceTwoMonths" id="onceTwoMonths">
+                                    Once every two months
+                                    <br>
+                                    <input type="radio" name="frequency" value="onceThreeMonths" id="onceThreeMonths">
+                                    Once every three months or more OR One time service
+                                    <br>
+                                    <br>
+                                </div>
+                                
+                                <strong>How long ago was the last full cleaning of the house?</strong>
+                                <br>
+                                <br>
+                                <input type="radio" name="lastCleaning" value="lessMonth" id="lessMonth" checked>
+                                Less than a month ago
+                                <br>
+                                <input type="radio" name="lastCleaning" value="betweenMonthTwo" id="betweenMonthTwo">
+                                Between a month and two ago
+                                <br>
+                                <input type="radio" name="lastCleaning" value="threeMore" id="threeMore">
+                                Three or more months ago
+                                <br>
+                                <br>
+                                
+                                <strong>What is the square footage of the house?</strong>
+                                <br>
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="4-7" id="4-7" checked>
+                                400 - 700 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="7-10" id="7-10">
+                                701 - 1000 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="10-13" id="10-13">
+                                1001 - 1300 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="13-17" id="13-17">
+                                1301 - 1700 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="17-21" id="17-21">
+                                1701 - 2100 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="21-25" id="21-25">
+                                2101 - 2500 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="25-29" id="25-29">
+                                2501 - 2900 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="29-33" id="29-33">
+                                2901 - 3300 Sq ft
+                                <br>
+                                <br>
+                                <input type="radio" name="sqFT" value="33+" id="33+">
+                                3301 or more Sq ft
+                                <br>
+                                <br>
+                                
+                                
+                                <strong>How many bathrooms?</strong>
+                                <br>
+                                <br>
+                                <input type="radio" name="bathAM" value="1-2" id="1-2" checked>
+                                1 - 2 bathrooms
+                                <br>
+                                <br>                                
+                                <input type="radio" name="bathAM" value="3-4" id="3-4">
+                                3 - 4 bathrooms
+                                <br>
+                                <br>
+                                <input type="radio" name="bathAM" value="5-6" id="5-6">
+                                4 - 5 bathrooms
+                                <br>
+                                <br>
+                                <input type="radio" name="bathAM" value="6+" id="6+">
+                                More than 5 bathrooms
+                                <br>
+                                <br>
+                                
+                                <strong>Do you want cleaning on the inseide of the fridge? *Freezer not included*</strong>
+                                <br>
+                                <br>
+                                <input type="radio" name="fridge" value="fridgeY" id="fridgeY" checked>
+                                Yes
+                                <br>
+                                <br>
+                                <input type="radio" name="fridge" value="fridgeN" id="fridgeN">
+                                No
+                                <br>
+                                <br>
+                                
+                                
+                                <strong>Do you have pets?</strong>
+                                <br>
+                                <br>
+                                <input type="radio" name="pet" value="petY" id="petY" onclick="checkPet()" checked>
+                                Yes
+                                <br>
+                                <br>
+                                <input type="radio" name="pet" value="petN" id="petN" onclick="checkPet()">
+                                No
+                                <br>
+                                <br>                                
+                                <input type="submit" id="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                                
+                            </form>
+                            <div id="finalMessage" style="display: none">
+                                <h3>Thank You for choosing us!</h3>
+                                <p> Your estimated final value is: U$<span id="finalPrice"></span>.00.</p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+        </div>
+
+        <script src="script.js"></script>
+            <a href="#top" class="backTop"><img class="topIcon" src="https://cdn2.iconfinder.com/data/icons/music-player-icons-filled/54/Download_Upward-512.png"></a>
+        <footer>
+            <br>
+            <div style="text-align: center">
+                <div>
+                    Contact Information:
+                </div>
+                <br>
+                <div>
+                    E-mail: <a href="mailto:fig16009@byui.edu"> fig16009@byui.edu</a>
+                </div>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <div>
+                    Facebook <a href="https://www.facebook.com/arthur.figueiredo.376">Arthur Figueiredo</a>
+                </div>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <div>
+                    Phone # +1 (385) 477-7130
+                </div>
+                <br>
+            </div>
+        </footer>
+    </body>
+</html>

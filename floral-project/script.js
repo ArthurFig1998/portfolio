@@ -10,6 +10,58 @@ function myFunction()
             x.className = "topnav";
         }
 }
+
+
+function checkTypeContact()
+{
+  var email = document.getElementById('email');
+  var phone = document.getElementById('phone');
+  var emailType = document.getElementById('emailType');
+  var phoneType = document.getElementById('phoneType');
+  
+  if(email.checked)
+  {
+      emailType.style.display = "block";
+      phoneType.style.display = "none";
+  }
+  else if(phone.checked)
+  {
+    
+      phoneType.style.display = "block";
+      emailType.style.display = "none";
+  }
+    
+}
+
+function contact()
+{
+    document.getElementById('home').style.display = "none";
+    document.getElementById('message').style.display = "none";
+    document.getElementById('contactPart').style.display = "block";
+    document.getElementById('team').style.display = "none";
+}
+function team()
+{
+    document.getElementById('home').style.display = "none";
+    document.getElementById('team').style.display = "block";
+    document.getElementById('message').style.display = "none";
+    document.getElementById('contactPart').style.display = "none";
+}
+
+function home()
+{
+    document.getElementById('home').style.display = "block";
+    document.getElementById('team').style.display = "none";
+    document.getElementById('contactPart').style.display = "none";
+}
+
+function message()
+{
+    document.getElementById('message').style.display = "block";
+    document.getElementById('home').style.display = "block";
+    document.getElementById('team').style.display = "none";
+    document.getElementById('contactPart').style.display = "none";
+}
             
 function checkType()
 {
@@ -24,20 +76,7 @@ function checkType()
             freqCleaning.style.opacity = "0";
         }
 }
-            
-function checkPet()
-{
-    if(document.getElementById('petY').checked)
-        {
-            petYes.style.opacity = "1";
-            petYes.style.height = "7em";
-        }
-    else if(document.getElementById('petN').checked)
-        { 
-            petYes.style.height = "0";
-            petYes.style.opacity = "0";
-        }
-}
+
 
 function calcEstimate(event)
 {
