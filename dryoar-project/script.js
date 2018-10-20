@@ -18,3 +18,23 @@ function checkType()
   }
     
 }
+
+              
+    function jack()
+    {
+        var jacksonSec = document.getElementById('jacksonHoleSec');
+        var yellowSec = document.getElementById('yellowstoneSec');
+        
+        jacksonSec.style.display = "block";
+        yellowSec.style.display = "none";
+    }
+    
+    function yellow()
+    {
+        
+        var jacksonSec = document.getElementById('jacksonHoleSec');
+        var yellowSec = document.getElementById('yellowstoneSec');
+        
+        jacksonSec.style.display = "none";
+        yellowSec.style.display = "block";
+    }

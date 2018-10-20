@@ -221,3 +221,55 @@ p
 {
   background-color: #FFBC42;
 }
+
+
+
+.container {
+    position: relative;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px 50px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+
+
+#yellowstoneSec
+{
+    display: none;
+}
+
+
+.riverHead
+{
+    font-family: 'Permanent Marker', cursive;
+    
+}
+
+
+
+
+.btn-group .button {
+    background-color: #AC3931;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    background-color: #FFBC42;
+    color: black;
+}
